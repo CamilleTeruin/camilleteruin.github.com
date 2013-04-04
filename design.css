@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* CSS Document */
+* {margin:0; padding:0}
+@font-face {
+	font-family: 'IconFont';
+	src:url('fonts/icons/icomoon.eot');
+	src:url('fonts/icons/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icons/icomoon.woff') format('woff'),
+		url('fonts/icons/icomoon.ttf') format('truetype'),
+		url('fonts/icons/icomoon.svg#IconFont') format('svg');
+	font-weight: lighter;
+	font-style: normal;
+}
+.icon {
+	font-family: 'IconFont' !important;
+	font-size:22px;
+	margin-top:60px;
+}
+html
+{
+	height:100%;
+}
+body
+{
+	background-color:#232323;
+	margin:0 auto;
+	padding:0;
+}
+.image_fond
+{
+	text-align:center;
+	margin:0 auto;
+}
+#social_icons
+{
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+	top:20px;
+	height:80px;
+	z-index:1;
+	height:60px;
+	top:-40px
+}
+#social_icons li
+{
+	display:inline-block;
+	list-style:none;
+	padding:5px 20px 0 20px;
+}
+#social_icons a
+{
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	color:#FFFFFF;
+	opacity:.5;
+	text-decoration:none;
+	height:40px;
+	width:40px;
+	border:solid 2px #ffffff;
+	display:block;
+	text-align:center;
+}
+	.dribbble{
+		line-height: 40px !important;
+	}
+	.mail{
+		line-height: 30px !important;
+	}
+	.tumblr{
+		line-height: 36px !important;
+	}
+	
+#social_icons a:hover
+{	
+	opacity:.2;
+}
