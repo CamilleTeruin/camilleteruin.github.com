@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Camille Teruin</title>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/simplhover.js"></script>
+    <link type="text/css" href="stylesheets/style.css" media="screen" rel="stylesheet" />
+<link type="text/css" href="stylesheets/flexslider.css" media="screen" rel="stylesheet" />
+<link type="text/css" href="stylesheets/simplhover.css" media="screen" rel="stylesheet" />
+  </head>
+
+  <body class="jef">
+    <div class="wrapper menu" >
+  <div>
+    <div class="container">
+
+      <ul id="navigation">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="index.html#work">WORK</a></li>
+          <li><a href="index.html#about">ABOUT</a></li>
+          <li><a href="http://camilleteruin.tumblr.com/">BLOG</a></li>
+      </ul>
+       <ul id="social_navigation" class="hide-on-phone">
+           <li><a href="javascript:mail('hello')"><span class="icon mail">m</span></a></li>
+           <li><a href="http://dribbble.com/camilleteruin"><span class="icon dribbble">d</span></a></li>
+           <li><a href="http://www.linkedin.com/profile/view?id=234304633&goback=.nmp_*1_*1_*1_*1_*1_*1_*1_*1_*1&trk=spm_pic"><span class="icon linkedin">l</span></a></li>
+       </ul>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper header" data-0="background-position:0px 0px;" data-500="background-position:0px -400px;">
+  <div id="header" class="container">
+    <a href="index.html"><img src="img/logo.png" width="389" height="137"/></a>
+  </div>
+</div>
+
+    <div id="conteneur" class="container">
+
+        <div class="textes_projet">
+          <div class="navigation_projet">
+            <a href="lagaufre.html"><img src="img/gauche.png"></a>
+            <a href="liz.html"><img src="img/droite.png"></a>
+        </div>
+            <h1>JEF CHAUSSURES</h1>
+            <p class="cat_projet">Sales promotion materials</p>
+            <p class="cat_projet lil">(promotional mini-sites, website landing pages,
+            email campaigns)</p>
+            <p class="legals">2011-2013 © Silicon salad / JEF Chaussures</p>
+         </div>
+        <div class="images_projet">
+            <img src="img/jef/jef_1.jpg">
+            <img src="img/jef/jef_2.jpg">
+            <img src="img/jef/jef_3.jpg">
+            <img src="img/jef/jef_4.jpg">
+            <img src="img/jef/jef_5.jpg">
+            <img class="small premier" src="img/jef/jef_6.jpg">
+            <img class="small" src="img/jef/jef_7.jpg">
+        </div>
+    </div>
+
+    <div class="wrapper footer">
+    <ul id="footer" class="container">
+        <li class="design_footer"><p> MORE DESIGN</p>
+                <ul class="sous_categories">
+                    <li><a href="http://dribbble.com/camilleteruin"><span class="icon">d</span> Dribbble</a></li>
+                    <li><a href="http://camilleteruin.tumblr.com/"><span class="icon">t</span>Blog</a></li>
+                    <li><a href="http://pinterest.com/kamiye/"><span class="icon">p</span>Pinterest</a></li>
+               </ul>
+            </li>
+            <li class="contact_footer"><p> GET IN TOUCH</p>
+            <ul class="sous_categories">
+                <li><a href="javascript:mail('hello')"><span class="icon">m</span>Email</a></li>
+                 <li><a href="http://www.linkedin.com/profile/view?id=234304633&goback=.nmp_*1_*1_*1_*1_*1_*1_*1_*1_*1&trk=spm_pic"><span class="icon">l</span>Linkedin</a></li>
+                 <li><a href="http://www.viadeo.com/profile/002kquclucnngp2"><span class="icon">v</span>Viadeo</a></li>
+             </ul>
+             </li>
+             <li class="logo_footer"><img src="img/logo_footer.png"/></li>
+    </ul>
+  </div>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.flexslider').flexslider({
+          animation: "slide",
+        slideshowSpeed: 3000
+          });
+        $('#simplhover').Simplhover({
+          contentMarkup :'h2',
+          background : 'rgba(254,110,84, .7)',
+          width: 528,
+          height: 336,
+          timer: 500,
+          linkToName: ''
+        });
+      });
+      skrollr.init({
+        forceHeight: false
+      });
+      function mail(str){
+          window.location.href="mailto:" + str + "@" + "camilleteruin.com";
+      };
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,50 @@
+.simplhover-element {
+  position:relative;
+  display: inline-block;
+  list-style: none;
+  width: 100%;
+  overflow: hidden;
+}
+
+.simplhover-element-content {
+  display: none;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer
+}
+
+.simplhover-element h2 {
+  padding: 20% 0 0;
+  color: rgba(255,255,255,1);
+  font-family: LatoRegular;
+}
+.simplhover-element h2 a {
+  color:white;
+  text-decoration:none;
+  font-size:1em;
+}
+.simplhover-element span{
+    padding-top:3%;
+    font-family: LatoRegular;
+    font-size:.6em;
+    display:block
+  }
+
+.simplhover-element img {
+  display:block;
+  max-width: 100%;
+  -moz-transition:
+    all .2s ease-out;
+  -webkit-transition:
+    all .2s ease-out;
+}
+
+img.blur {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -webkit-box-shadow: inset 0 0 20px rgba(255,255,255,.6);
+  -webkit-filter: blur(2px)
+}

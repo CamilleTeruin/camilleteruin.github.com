@@ -1,34 +1,166 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="design.css" rel="stylesheet" type="text/css" />
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Camille Teruin</title>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/simplhover.js"></script>
+    <link type="text/css" href="stylesheets/style.css" media="screen" rel="stylesheet" />
+<link type="text/css" href="stylesheets/flexslider.css" media="screen" rel="stylesheet" />
+<link type="text/css" href="stylesheets/simplhover.css" media="screen" rel="stylesheet" />
+  </head>
 
+  <body class="index">
+    <div class="wrapper menu" >
+  <div>
+    <div class="container">
 
-<title>Camille Teruin, graphic design and illustration - New website soon !</title>
-
-</head>
-
-
-<body>
-<div class="image_fond">
-    <img src="wait.jpg" alt="website under construction" width="900" height="593"  />
+      <ul id="navigation">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="index.html#work">WORK</a></li>
+          <li><a href="index.html#about">ABOUT</a></li>
+          <li><a href="http://camilleteruin.tumblr.com/">BLOG</a></li>
+      </ul>
+       <ul id="social_navigation" class="hide-on-phone">
+           <li><a href="javascript:mail('hello')"><span class="icon mail">m</span></a></li>
+           <li><a href="http://dribbble.com/camilleteruin"><span class="icon dribbble">d</span></a></li>
+           <li><a href="http://www.linkedin.com/profile/view?id=234304633&goback=.nmp_*1_*1_*1_*1_*1_*1_*1_*1_*1&trk=spm_pic"><span class="icon linkedin">l</span></a></li>
+       </ul>
     </div>
-<div id="social_icons">
-        <ul>
-            <li><a href="http://dribbble.com/camilleteruin"><span class="icon dribbble">d</span></a></li>
-            <li><a href="http://camilleteruin.tumblr.com/"><span class="icon tumblr">t</span></a></li>
-            <li><a href="http://www.viadeo.com/profile/002kquclucnngp2"><span class="icon tumblr">v</span></a></li>
-            <li><a href="javascript:mail('camille.teruin')"><span class="icon mail">m</span></a></li>
-         </ul>
+  </div>
+</div>
+
+<div class="wrapper header" data-0="background-position:0px 0px;" data-500="background-position:0px -400px;">
+  <div id="header" class="container">
+    <a href="index.html"><img src="img/logo.png" width="389" height="137"/></a>
+  </div>
+</div>
+
+      <div id="work" class="title work">
+    <span data-20="background-position:0px -74px" data-180="background-position:0px -18px">Work</span>
     </div>
- 	
-   <script type="text/javascript">
-    	function mail(str){
-      		window.location.href="mailto:" + str + "@" + "gmail.com";
-   		};
+
+    <div id="conteneur" class="container">
+      <div id="slideshow" class="hide-on-phone">
+      <div class="flexslider">
+                <ul class="flex-direction-nav">
+                    <li><a class="flex-prev" href="#">Previous</a></li>
+                    <li><a class="flex-next" href="#">Next</a></li>
+                </ul>
+                <ul class="slides">
+                    <li>
+                    <a href="etiquettes.html"><img src="img/slide1.jpg" /></a>
+                    </li>
+                    <li>
+                    <a href="atelier.html"><img src="img/slide2.jpg" /></a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+        <div id="vignettes">
+            <ul id="simplhover">
+                <li><img width="306" height="195" alt="L'ATELIER DU MASSAGE" src="img/v1.jpg" data-url="atelier.html" data-desc="Webdesign - 2013" /></li>
+                <li><img width="306" height="195" alt="LES ETIQUETTES" src="img/v2.jpg" data-url="etiquettes.html" data-desc="Illustration & print - 2012" /></li>
+                <li class="derniere"><img width="306" height="195" alt="LA GAUFRE" src="img/v3.jpg" data-url="lagaufre.html" data-desc="Webdesign - 2012" /></li>
+                <li><img width="306" height="195" alt="JEF CHAUSSURES" src="img/v4.jpg" data-url="jef.html" data-desc="Sales promotion materials - 2012-2013" /></li>
+                <li><img width="306" height="195" alt="LIZ&LEO" src="img/v5.jpg" data-url="liz.html" data-desc="Sales promotion materials - 2012-2013" /></li>
+                <li class="derniere"><img width="306" height="195" alt="MONTRES&CO" src="img/v6.jpg" data-url="maco.html" data-desc="Animation commerciale - 2012-2013" /></li>
+             </ul>
+        </div>
+  </div>
+    <div class="wrapper about-wrap">
+    <div id="about" class="title about">
+      <span data-1100="background-position:0px -76px" data-1180="background-position:0px -18px">About</span>
+    </div>
+
+     <div id="content_about" class="container">
+
+      <img src="img/image_about.jpg" width="1000" height="240" />
+        <h2>I’m a graphic designer, aspirant illustrator, junior webdesigner,<br/>
+rookie front-end developper, definitely passionate about what I do.</h2>
+        <div id="story">
+            <p><span>SHORT STORY</span></p>
+             <p>Hello ! My name is Camille and I'm a young web and graphic designer.<br/>
+              I love to create clean designs in which I try to put love and enthusiasm in every pixels.<br/><br/>
+             When I'm not working on a screen, I enjoy taking a pencil and <br/>a sketchbook, or just craft things with my own hands.</p>
+         </div>
+         <div id="skills">
+            <p><span>SKILLS</span></p>
+            <ul class="categorie first">
+                <li><img src="img/graphic.gif" width="42" height="43"/><span> GRAPHIC DESIGN</span></li>
+                <!--<li class="skill_circle">Fireworks</li>
+                <li class="skill_circle">Photoshop</li>
+                <li class="skill_circle2">InDesign</li>-->
+            </ul>
+            <ul class="categorie">
+                <li><img src="img/illustration.gif" width="42" height="43"/><span>ILLUSTRATION</span></li>
+                <!--<li class="skill_circle">Illustrator</li>
+                <li class="skill_circle2">Flash</li>-->
+            </ul>
+            <ul class="categorie">
+                <li><img src="img/code.gif" width="42" height="43"/><span>CODE</span></li>
+                <!--<li class="skill_circle2">html</li>
+                <li class="skill_circle2">CSS</li>
+                <li class="skill_circle2">AS3</li>-->
+            </ul>
+         </div>
+  </div>
+    </div>
+
+    <div class="wrapper footer">
+    <ul id="footer" class="container">
+        <li class="design_footer"><p> MORE DESIGN</p>
+                <ul class="sous_categories">
+                    <li><a href="http://dribbble.com/camilleteruin"><span class="icon">d</span> Dribbble</a></li>
+                    <li><a href="http://camilleteruin.tumblr.com/"><span class="icon">t</span>Blog</a></li>
+                    <li><a href="http://pinterest.com/kamiye/"><span class="icon">p</span>Pinterest</a></li>
+               </ul>
+            </li>
+            <li class="contact_footer"><p> GET IN TOUCH</p>
+            <ul class="sous_categories">
+                <li><a href="javascript:mail('hello')"><span class="icon">m</span>Email</a></li>
+                 <li><a href="http://www.linkedin.com/profile/view?id=234304633&goback=.nmp_*1_*1_*1_*1_*1_*1_*1_*1_*1&trk=spm_pic"><span class="icon">l</span>Linkedin</a></li>
+                 <li><a href="http://www.viadeo.com/profile/002kquclucnngp2"><span class="icon">v</span>Viadeo</a></li>
+             </ul>
+             </li>
+             <li class="logo_footer"><img src="img/logo_footer.png"/></li>
+    </ul>
+  </div>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.flexslider').flexslider({
+          animation: "slide",
+        slideshowSpeed: 3000
+          });
+        $('#simplhover').Simplhover({
+          contentMarkup :'h2',
+          background : 'rgba(254,110,84, .7)',
+          width: 528,
+          height: 336,
+          timer: 500,
+          linkToName: ''
+        });
+      });
+      skrollr.init({
+        forceHeight: false
+      });
+      function mail(str){
+          window.location.href="mailto:" + str + "@" + "camilleteruin.com";
+      };
+    </script>
+      <script type="text/javascript">
+    $(document).ready(function() {
+      $('#navigation a').smoothScroll();
+    });
   </script>
 
-</body>
+  </body>
 </html>
