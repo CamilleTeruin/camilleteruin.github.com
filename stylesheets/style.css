@@ -314,6 +314,9 @@ body{
 	padding-top:10px;
 	overflow: hidden;
 }
+.categorie li{
+	list-style-type:none;
+}
 	.first{
 		padding-top:0px;
 	}
