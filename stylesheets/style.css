@@ -491,6 +491,15 @@ body{
 	#header img{
 		width:80%
 	}
+	#content_about{
+	text-align:left;
+	}
+	h2{
+	font-size:1.2em;
+	}
+	#story > p:first-child, #skills > p:first-child, #skills li {
+		text-align: left!important;
+	}
 	.logo_footer{
 		float:none !important;
 		clear: both;
@@ -538,14 +547,17 @@ body{
 	#story > p:first-child, #skills > p:first-child, #skills li {
 		text-align: center;
 	}
-	#skills li {
-		list-style-type: none;
-		width: 215px;
-		margin: 0 auto;
-	}
-
 	#skills {
 		margin-top: 0;
+	}
+	#skills span{
+		margin-left:10px;
+	}
+	#skills li {
+		list-style-type: none;
+		width: 225px;
+		margin-left:10px;
+		float:left;
 	}
 	.design_footer{
 		width:49% !important;
