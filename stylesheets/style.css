@@ -521,12 +521,16 @@ body{
 			padding-right:1%;
 		}
 	.textes_projet{
-		padding-top:15%;
+		text-align: left;
+		padding-top:60px;
 		font-size:88%;
 	}
 	.navigation_projet{
-		left:43%;
-		top:10%;
+		left:1px;
+		top:30px;
+	}
+	h1{
+		padding-top:15px;
 	}
 	#story, #skills {
 		width: 100%;
