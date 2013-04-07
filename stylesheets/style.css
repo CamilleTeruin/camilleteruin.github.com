@@ -568,6 +568,12 @@ body{
 	}
 }
 @media only screen and (min-width: 569px) and (max-width: 1000px) {
+	#story{
+		width:46%;
+	}
+	#skills{
+		width:41%;
+	}
 	#navigation{
 		text-align:left
 	}
