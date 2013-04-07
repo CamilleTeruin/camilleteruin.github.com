@@ -72,8 +72,8 @@ body{
 	background: #FBFBF9;
 	border-top:4px solid #FD7D62;
 }
-img a:hover{
-	border:0;
+img {
+	border: 0 none;
 }
 
 .wrapper {
@@ -146,7 +146,7 @@ img a:hover{
 	display:inline-block;
 	padding:0 2%;
 	zoom:1;
-	*diplay:inline;
+	*display:inline;
 }
 #navigation li a{
 	font-family:"museosans_500", Trebuchet MS, "Arial, Helvetica", sans-serif;
