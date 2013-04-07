@@ -72,6 +72,9 @@ body{
 	background: #FBFBF9;
 	border-top:4px solid #FD7D62;
 }
+img a:hover{
+	border:0;
+}
 
 .wrapper {
 	width: 100%;
@@ -142,6 +145,8 @@ body{
 #navigation li{
 	display:inline-block;
 	padding:0 2%;
+	zoom:1;
+	*diplay:inline;
 }
 #navigation li a{
 	font-family:"museosans_500", Trebuchet MS, "Arial, Helvetica", sans-serif;
@@ -414,6 +419,7 @@ body{
 		margin:0 0 0 8%;
 		padding-top:15px;
 		border:none;
+		list-style-type:none;
 		}
 	#footer img{
 		margin-top:15px;
