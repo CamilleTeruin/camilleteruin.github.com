@@ -1,0 +1,9 @@
+
+@font-face {
+	font-family: 'Mission-Script';
+	src: url('Mission-Script.eot?') format('eot'), 
+	     url('Mission-Script.otf')  format('opentype'),
+	     url('Mission-Script.woff') format('woff'), 
+	     url('Mission-Script.ttf')  format('truetype'),
+	     url('Mission-Script.svg#Mission-Script') format('svg');
+}

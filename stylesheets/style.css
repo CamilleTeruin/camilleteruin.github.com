@@ -2,6 +2,16 @@
 /* CSS Document */
 * {margin:0; padding:0}
 @font-face {
+    font-family: 'mission_script';
+    src: url('../fonts/Mission-Script/MMission-Script.eot');
+    src: url('../fonts/Mission-Script/Mission-Script.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Mission-Script/Mission-Script.woff') format('woff'),
+         url('../fonts/Mission-Script/Mission-Script.ttf') format('truetype'),
+         url('../fonts/Mission-Script/Mission-Script.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'museosans_500';
     src: url('../fonts/museoSans/MuseoSans_500-webfont.eot');
     src: url('../fonts/museoSans/MuseoSans_500-webfont.eot?#iefix') format('embedded-opentype'),
@@ -48,16 +58,16 @@
 	font-family: 'IconFont' !important;
 }
 h1{
-	font-family:"museosans_500", Trebuchet MS, "Arial, Helvetica", sans-serif;
+	font-family:"LatoRegular", Trebuchet MS, "Arial, Helvetica", sans-serif;
 	font-size:1.6em;
-	color:#FC7C60;
+	color:#444444;
 	font-weight:100
 }
 h2{
 	font-family: 'LatoRegular', Trebuchet MS, "Arial, Helvetica", sans-serif;
 	font-size:1.6em;
 	font-weight:100;
-	color:#FC795F;
+	color:#444444;
 	padding-top: 35px;
 }
 html{
@@ -69,12 +79,36 @@ body{
 	padding:0;
 	position:relative;
 	height: 100%;
-	background: #FBFBF9;
-	border-top:4px solid #FD7D62;
+	background: #F4F4F4;
+	border-top:8px solid #FD7D62;
 }
 img {
 	border: 0 none;
 }
+.ombre, .left, .right {
+	background: #FD7D62;
+	position: fixed;
+	z-index:92;
+	}
+	.ombre{
+		background: #FD7D62;
+		position: fixed;
+		z-index:91;
+		height:10px;
+		left:0;right:0;
+		top:125px;
+		background:#ffffff;
+		-webkit-box-shadow: 0 3px 4px -4px #cccccc;
+		-moz-box-shadow: 0 3px 4px -4px #cccccc;
+		box-shadow: 0 3px 4px -4px #cccccc;
+	}
+	.left, .right {
+		top: 0; bottom: 0;
+		width: 8px;
+		}
+
+		.left { left: 0; }
+		.right { right: 0; }
 
 .wrapper {
 	width: 100%;
@@ -82,19 +116,17 @@ img {
 }
 
 	.wrapper.header {
-		background-image:url("../img/texture.png");
-		background-repeat:repeat;
-		border-top: 4px solid #FFFFFF;
-		margin:50px 0 0;
+		background-color:#F4F4F4;
+		margin-top:60px;
 	}
 	.wrapper.about-wrap {
 		background: white;
 		overflow: hidden;
-		border-bottom: 50px solid #FBFBF9
+		border-bottom: 50px solid #FFFFFF
 	}
 #content_about img {
 	width: 100%;
-	height:auto
+	height:auto;
 }
 
 .container {
@@ -109,38 +141,47 @@ img {
 
 #header{
 	text-align:center;
-	min-height: 238px;
+	min-height: 350px;
 	padding: 6% 0 0;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box
 }
-#header img{
-	width:100%;
-	max-width:389px;
-	height:auto
+#header h1{
+	font-family:'mission_script' Trebuchet MS, "Arial, Helvetica", sans-serif;
+	font-size:75px;
+	padding-top:90px;
+	cursor: pointer;
 }
+#header p{
+	font-family: 'LatoRegular' Trebuchet MS, "Arial, Helvetica", sans-serif;
+	font-size: 22px;
+	color:#444444;
+	padding-top:20px;
+	line-height: 30px
+}
+
 .menu{
-	padding: 5px 0;
-	background-color:#FBFBF9;
+	background-color:#FFFFFF;
 	position: fixed;
 	z-index:90;
-	-webkit-box-shadow: 0 -5px 0 #FD7D62;
-	-moz-box-shadow: 0 -5px 0 #FD7D62;
-	box-shadow: 0 -5px 0 #FD7D62;
+	-webkit-box-shadow: 0 -8px 0 #FD7D62;
+	-moz-box-shadow: 0 -8px 0 #FD7D62;
+	box-shadow: 0 -8px 0 #FD7D62;
+	height: 124px
 }
-	.menu > div {
-		border-top: 1px solid #E0D2CF;
-		border-bottom: 1px solid #E0D2CF;
-	}
 	.menu .container{
 		position:relative;
 	}
+	.menu img{
+		position:absolute;
+		top:16px;
+		display:inline-block;
+	}
 #navigation{
-	height:42px;
-	text-align:left;
+	text-align:right;
 	list-style:none;
-	line-height:42px;
+	line-height:168px;
 }
 #navigation li{
 	display:inline-block;
@@ -150,8 +191,8 @@ img {
 }
 #navigation li a{
 	font-family:"museosans_500", Trebuchet MS, "Arial, Helvetica", sans-serif;
-	font-size:.96em;
-	color:#574849;
+	font-size:1em;
+	color:#444444;
 	text-decoration:none;
 	-webkit-transition:color .3s ease-in;
    -moz-transition:color .3s ease-in;
@@ -161,78 +202,52 @@ img {
 #navigation li a:hover{
 	color:#EA5D4E;
 }
+#barre{
+
+}
 #social_navigation{
-	position:absolute;
-	top:6px;
-	right:10px;
+	text-align: center;
 }
 #social_navigation li{
 	display:inline-block;
-	float:left;
-	padding-left:10px;
+	padding-top:60px;
 }
 #social_navigation a{
 	text-decoration:none;
 }
 #social_navigation a .icon{
-	height:30px;
-	width:30px;
-	color:#9A9A9A;
-	display:block;
-	font-size:1.2em;
+	height:40px;
+	width:50px;
+	color:#FD7D62;
+	display:inline-block;
+	font-size:1.3em;
 	text-align:center;
-	line-height:25px;
 	-webkit-transition:color .3s ease-in;
    -moz-transition:color .3s ease-in;
    -o-transition:color .3s ease-in;
    transition:color .3s ease-in;
 }
 #social_navigation a:hover .icon{
-	height:30px;
-	width:30px;
-	display:block;
-	font-size:1.2em;
+	display:inline-block;
+	font-size:1.3em;
 	text-align:center;
-	line-height:25px;
+	color:#FCB4A1;
+}
+.dribbble{
+	font-size:1.2em !important;
+	line-height:65px !important;
 }
 
-	.dribbble{
-		line-height: 30px !important;
-	}
-	#social_navigation a:hover .dribbble{
-		color:#ea4c89;
-	}
-	#social_navigation a:hover .mail{
-		color:#FD7D62;
-	}
-	#social_navigation a:hover .linkedin{
-		color:#0076A8
-	}
 #conteneur{
 	overflow:hidden;
+	margin-bottom: 120px
 }
 .title{
 	height:60px;
 	left:50%;
-	border-top:1px solid #E0D2CF;
-	margin-top:6px;
+	margin-top:80px;
 	margin-bottom:60px;
-	border-bottom: 1px solid #E0D2CF;
 }
-	.work {
-		border-top: 0 none;
-	}
-	.work span{
-		display: block;
-		width: 140px;
-		height: 45px;
-		position: relative;
-		top: 35px;
-		margin: 0 auto;
-		text-indent: -999em;
-		background:url(../img/work.gif) no-repeat;
-	}
-
 	.about {
 		border-top: 0 none;
 	}
@@ -254,9 +269,9 @@ img {
 #vignettes li{
 	display:inline-block;
 	float:left;
-	margin:0 3% 30px 0;
+	margin:0 1.2% 10px 0;
 	list-style:none;
-	width: 31.334%
+	width: 32.334%
 }
 	#vignettes img {
 		width: 100%;
@@ -266,71 +281,21 @@ img {
 	margin-right:0 !important;
 }
 #content_about{
-	height:740px;
+	height:400px;
+	width:60%;
 	text-align:center;
 	margin-top:46px;
 	background-color:#ffffff;
 }
 #content_about p{
-	text-align: left;
+	text-align: center;
 	font-family:LatoRegular;
-	color:#ACA0A0;
+	color:#666666;
 	font-size: 16px;
 	padding-top:20px;
 }
-#content_about p span{
-	font-size: 30px;
-	color:#978C8C;
-	margin-top:18px;
-	font-family:LatoBold;
-}
-#story
-{
-	padding:50px 0;
-	width:50%;
-	display:inline-block;
-	float:left;
-}
-#skills{
-	margin:45px 0;
-	padding-right:2%;
-	width:32%;
-	height:auto;
-	display:inline-block;
-	float:right;
-}
-#skills > p {
-	margin: 0 0 1em;
-}
-.categorie li span{
-	color:#ACA0A0;
-	display: inline-block;
-	float: none;
-	padding: 15px 20px;
-	font-family:LatoBold;
-	font-size:1em;
-	float: left;
-
-	}
-.categorie{
-	text-align: left;
-	font-family:LatoRegular;
-	color:#ACA0A0;
-	padding-top:10px;
-	overflow: hidden;
-}
-.categorie li{
-	list-style-type:none;
-}
-	.first{
-		padding-top:0px;
-	}
-.categorie img {
-	width: auto !important;
-	float:left;
-}
 .images_projet{
-	padding-bottom:120px;
+	padding-bottom:50px;
 	width:100%;
 	margin:0 auto;
 	text-align:center;
@@ -343,23 +308,27 @@ img {
 	padding:10px 0
 }
 .small.premier{
-			padding-right:10px;
+	padding-right:25px;
 		}
 .navigation_projet{
 	position:absolute;
 	right:0;
-	top:90px;
+	top:290px;
 	width:60px;
 }
 	.simple{
-		top:74px;
+		top:280px;
 	}
 .navigation_projet a:hover{
 	opacity:.5;
 }
+.nav_bas{
+	position:relative !important;
+	text-align: right;
+}
 .textes_projet{
 	width:100%;
-	padding:40px 0 25px ;
+	padding:240px 0 25px ;
 	text-align: center;
 	font-family:museosans_500;
 	color:#999999;
@@ -379,144 +348,78 @@ img {
 	padding:10px 0 3px;
 }
 .lil{
-	border-bottom:1px solid #cccccc;
+
 	padding:0 0 10px;
 	font-size: 12px;
 }
 .legals{
+	font-family:museosans_500;
+	color:#999999;
 	font-size: 12px;
-	padding:10px 0;
+	text-align: center;
 }
 .wrapper.footer{
-	background-image:url(../img/texture_footer.png);
+	background-color:#FD7D62;
 	background-repeat:repeat;
 	height:auto;
-	border-bottom:#FBFBF9 4px solid;
 	padding-bottom:20px;
-	-webkit-box-shadow: 0 5px 0 #FD7D62;
-	-moz-box-shadow: 0 5px 0 #FD7D62;
-	box-shadow: 0 5px 0 #FD7D62;
 }
-#footer{
-	text-align:center;
+.footer {
+	text-align: center;
 }
-#footer li{
-	display:inline-block;
-	width:33.33%;
-	text-align:left;
-	margin-top:25px;
+.footer img{
+	margin: 80px 0 ;
 }
-	#footer>li{
-		min-height:150px;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-	}
-	#footer li li {
-		float: none;
-		width: 92%;
-		display: block;
-		margin:0 0 0 8%;
-		padding-top:15px;
-		border:none;
-		list-style-type:none;
-		}
-	#footer img{
-		margin-top:15px;
-	}
-	.logo_footer{
-	float:left;
-	border-left:none;
-	border-right:1px solid #EC6549;
-	padding: 0 0 0 1em;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	}
-	.contact_footer{
-	float:right;
-	border-left:1px solid #FD9781;
-	border-right:1px solid #EC6549;
-	}
-	.design_footer{
-	float:right;
-	border-right:none;
-	border-left:1px solid #FD9781;
-	}
-#footer p{
-	font-family:"museosans_500", Trebuchet MS, "Arial, Helvetica", sans-serif;
-	font-size:1.4em;
-	color:#ffffff;
-	text-decoration:none;
-	font-weight:300;
-	margin-left:8%;
-}
-#footer a{
-	font-family:"museosans_500", Trebuchet MS, "Arial, Helvetica", sans-serif;
-	color:#ffffff;
-	text-decoration:none;
-	font-size:1em;
-	-webkit-transition:opacity .3s ease-in;
-   -moz-transition:opacity .3s ease-in;
-   -o-transition:opacity .3s ease-in;
-   transition:opacity .3s ease-in;
-}
-#footer a:hover{
-	opacity: .5;
-}
-#footer .icon {
-	color:#AB442A;
-	font-size:1.4em;
-	text-shadow:1px 1px rgba(255,255,255,.5);
-	padding-right:4%;
-}
-.sous_categories{
-	display:block;
-	clear:both;
-}
+
 @media only screen and (max-width: 568px) {
   .show-on-phone {
     display:inline-block;
   }
-
   .hide-on-phone {
     display: none
   }
-  #vignettes li {
-  	width: 100%;
-	margin: 0 0 15px
+  #header p{
+  	font-size: 1.1em;
+  	margin:0 4% 10% 4%;
+  	line-height: 25px
+  }
+  #header h1{
+  	font-size: 3.8em;
+  	padding-top:35%;
+  	margin-left: 4%
+  }
+  #navigation {
+  	text-align: center;
+  }
+  .menu{
+  	text-align: center;
+  	height:160px;
+  }
+  .menu img{
+  	position:relative;
+  	width:44%;
+  }
+  #navigation{
+  	line-height:100px;
   }
   #navigation li{
-	padding:0 2%;
-	font-size:.94em
-	}
-	#header{
-		min-height: 60px;
-		padding: 20% 0
-	}
-	#header img{
-		width:80%
-	}
-	#content_about{
-	text-align:left;
-	}
+	padding:0 3%;
+	font-size:1.1em;
+   }
+   #content_about{
+   	 	width:100% !important;
+   }
+   #content_about p, #content_about h2{
+   	text-align: left;
+   	margin:0 4%;
+   }
+   #vignettes li {
+  	width: 90%;
+	margin: 0 0 15px;
+	float:none !important;
+  }
 	h2{
-	font-size:1.2em;
-	}
-	#story > p:first-child, #skills > p:first-child, #skills li {
-		text-align: left!important;
-	}
-	.logo_footer{
-		float:none !important;
-		clear: both;
-		padding: 0;
-		border: 0 none;
-		width: 100% !important;
-		text-align: center !important;
-	}
-	.contact_footer{
-		width:49% !important;
-		border-left:none;
+	font-size:1.3em;
 	}
 	.textes_projet,
 	.images_projet {
@@ -547,42 +450,18 @@ img {
 	h1{
 		padding-top:15px;
 	}
-	#story, #skills {
-		width: 100%;
-	}
-	#story > p:first-child, #skills > p:first-child, #skills li {
-		text-align: center;
-	}
-	#skills {
-		margin-top: 0;
-	}
-	#skills span{
-		margin-left:10px;
-	}
-	#skills li {
-		list-style-type: none;
-		width: 225px;
-		margin-left:10px;
-		float:left;
-	}
-	.design_footer{
-		width:49% !important;
-		border-right: 0 none;
-	}
 	#footer img{
 		margin-top:10px;
 	}
 }
 @media only screen and (min-width: 569px) and (max-width: 1000px) {
-	#story{
-		width:46%;
+	
+	#content_about{
+		width:80% !important;
 	}
-	#skills{
-		width:41%;
-	}
-	#navigation{
-		text-align:left
-	}
+	.menu img{
+  	left:4%;
+  	}
 	.textes_projet,
 	.images_projet {
 		width: 100%;
@@ -599,7 +478,11 @@ img {
 	.images_projet {
 		text-align: center;
 		margin-left: 0;
-		padding: 2% 0 15%
+		padding: 2% 0 4%
+	}
+	#vignettes li{
+		float:none;
+		margin: 0 0 0 0;
 	}
 	#vignettes h2 a{
 	font-size:.8em;
@@ -610,23 +493,6 @@ img {
 	.navigation_projet{
 		right:0;
 	}
-	.logo_footer{
-		float:none !important;
-		clear: both;
-		padding: 0;
-		border: 0 none;
-		width: 100% !important;
-		text-align: center !important;
-	}
-	.contact_footer{
-		width:49% !important;
-		border-left:none;
-	}
-	.design_footer{
-		width:49% !important;
-		border-right: 0 none;
-	}
-
 
 }
 
