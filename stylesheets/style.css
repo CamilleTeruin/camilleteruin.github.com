@@ -82,6 +82,7 @@ img {
 #header{
 	text-align:center;
 	min-height: 560px;
+	max-width: 100%;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box
@@ -90,8 +91,7 @@ img {
 	font-family:'Dosis', sans-serif;
 	font-size: 1.8em;
 	color:#ffffff;
-	padding: 220px 5% 0 0;
-	line-height: 42px;
+	display: inline-block;
 	text-align:left;
 }
 #header span{
@@ -102,9 +102,13 @@ img {
 }
 
 #header img{
-	float: left;
-	padding: 210px 7% 0 16%;
-	max-width:25%;
+	padding-right:7%;
+}
+#content_header{
+	margin:0 auto;
+	display:inline-block;
+	text-align: center;
+	padding-top: 210px;
 }
 
 .menu{
