@@ -8,103 +8,97 @@
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Camille Teruin - Web and Graphic design</title>
-    <script type="text/javascript" src="js/modernizr.js"></script>
-<script type="text/javascript" src="js/simplhover.js"></script>
+    <link href="favicon.ico" rel="shortcut icon">
+
     <link type="text/css" href="stylesheets/style.css" media="screen" rel="stylesheet" />
     <link type="text/css" href="stylesheets/simplhover.css" media="screen" rel="stylesheet" />
-    <link href="favicon.ico" rel="shortcut icon">
+
     <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Serif:400italic' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/simplhover.js"></script>
   </head>
 
-  <body class="index">
-    <!--<div class="left hide-on-phone">
-    <div class="right hide-on-phone"></div></div>-->
-    <div id="ombre"></div>
+  <body>
+   <div id="left"></div>
+   <div id="right"></div>
+   <div id="bottom"></div>
 
-<div class="wrapper header">
+<div class="wrapper header" id"fond">
   <div class="wrapper menu">
       <div class="container">
-        <a href="index.html"><img src="img/logo.png" with"240" height"78"/></a>
-        <ul id="navigation">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="index.html#work">WORK</a></li>
-          <li><a href="index.html#about">ABOUT</a></li>
-          <li><a href="index.html#contact">CONTACT</a></li>
+        <a class="hide-on-phone" href="index.html"><img src="img/elts/logo.png" with"240" height"78"/></a>
+        <ul id="navigation" class="white">
+          <li><a href="index.html">home</a></li>
+          <li><a href="index.html#work">work</a></li>
+          <li><a href="index.html#about">about</a></li>
+          <li><a href="index.html#contact">contact</a></li>
         </ul>
       </div>
     </div>
-  <div id="header" class="container wrapper header" data-60="background-position:0px 0px;" data-500="background-position:0px -400px;">
-        <div id="content_header" class="container" >
-        <img class="hide-on-phone" src="img/logo_header.png"/>
-        <p> <span>HELLO !</span><br/>I'm a graphic & digital designer.<br/>
-        I also do a bit of illustration.<br/>
-        Here is a sample of my work.
-        </p>
-      </div>
+  <div id="header" class="container wrapper header">
+    <div id="content_header" class="container" >
+      <p>Bonjour, je suis Camille</p>
+      <h1>GRAPHISTE / WEBDESIGNER</h1>
+      <a id="bouton" class="hide-on-phone" href="index.html#work"><img src="img/elts/button.png"></a>
+    </div>
   </div>
 </div>
 
 <div id="conteneur" class="container">
-   <h2 id="work" class="title work" data-0="background-position:0px 118px;" data-340="background-position:410px 118px;">Work</h2>
+   <p id="work" class="title work" data-0="background-position:0% 118px;" data-340="background-position:20% 118px;">Work</p>
         <div id="vignettes">
             <ul id="simplhover">
-                <li><img width="590" height="390" alt="PINGULA" src="img/v8.jpg" data-url="pingula.html" data-desc="Identity / Webdesign" /></li>
-                <li class="derniere"><img width="590" height="390" alt="ALLAN BOISSONS" src="img/v2.jpg" data-url="allan.html" data-desc="Webdesign" /></li>
-                <li class="derniere"><img width="590" height="390" alt="L'ATELIER DU BIEN-ETRE" src="img/atelier.jpg" data-url="atelier.html" data-desc="Webdesign" /></li>
-                <li><img width="590" height="390" alt="MADTOOL" src="img/v6.jpg" data-url="madtool.html" data-desc="Illustration / Webdesign" /></li>
-                <li><img width="590" height="390" alt="LES ETIQUETTES" src="img/v1.jpg" data-url="etiquettes.html" data-desc="Illustration & print" /></li>
-                <li class="derniere"><img width="590" height="390" alt="LA GAUFRE" src="img/meert.jpg" data-url="lagaufre.html" data-desc="Webdesign" /></li>
-                <li><img width="590" height="390" alt="JEF CHAUSSURES" src="img/jef.jpg" data-url="jef.html" data-desc="Sales promotion materials" /></li>
-                <li class="derniere"><img width="590" height="390" alt="LIZ&LEO" src="img/v9.jpg" data-url="liz.html" data-desc="Sales promotion materials" /></li>
+                <li><img width="590" height="390" alt="E:GG" src="img/vignettes/egg.jpg" data-url="egg.html" data-desc="Identity / Design" /></li>
+                <li class="derniere"><img width="590" height="390" alt="PINGULA" src="img/vignettes/pingula.jpg" data-url="allan.html" data-desc="Identity / Webdesign" /></li>
+                <li><img width="590" height="390" alt="ALLAN" src="img/vignettes/allan.jpg" data-url="allan.html" data-desc="Webdesign" /></li>
+                <li class="derniere"><img width="590" height="390" alt="JEF CHAUSSURES" src="img/vignettes/jef.jpg" data-url="jef.html" data-desc="Animation commerciale" /></li>
+                <li><img width="590" height="390" alt="MADTOOL" src="img/vignettes/madtool.jpg" data-url="madtool.html" data-desc="Illustration / Webdesign" /></li>
+                <li class="derniere"><img width="590" height="390" alt="LES ETIQUETTES" src="img/vignettes/etiquettes.jpg" data-url="etiquettes.html" data-desc="Illustration / print" /></li>
+                <li><img width="590" height="390" alt="LIZ & LEO" src="img/vignettes/liz.jpg" data-url="liz.html" data-desc="Animation commerciale" /></li>
+                <li class="derniere"><img width="590" height="390" alt="ATELIER" src="img/vignettes/atelier.jpg" data-url="atelier.html" data-desc="Webdesign" /></li>
              </ul>
         </div>
   </div>
     <div class="wrapper about-wrap">
       <div id="about" class="about">
-         <h2 class="title_w" data-2000="background-position:0px 95px;" data-2300="background-position:400px 95px;">About</h2>
-        <p>Design is at the core of everything I do.
-        It's always a pleasure to work on a great project and use my imagination to make ideas come true.<br/>I love to create clean designs in which I put love and enthusiasm in every pixels.</p>
-        <p>
-            I have 3 years of experience as a graphic designer in a web agency. I also did a bit of freelancing.</br>
-            I worked on various matters such as marketing design, web design, illustration and identities.
-            I love design, but I must admit I love it even more when it melts with technology.<br/>
+         <p class="title_w" data-2000="background-position:400px 95px;" data-2200="background-position:480px 95px;">About</p>
+          <p>Je suis une graphiste/ webdesigner enthousiaste basée à Lille.
+              Après un passage à l’université de valenciennes où j’ai obtenu un master en arts et technologies numériques, j’ai décidé de me spécialiser dans le web.</p>
+              <p>J’ai trois d’expérience en agence, où je me suis principalement occupée de la communication digitale des clients.<br/>
+              J’ai également travaillé sur quelques projets de logos, webdesign et illustration en freelance.<br/>
+              <span class="hide-on-phone">J’ai récemment designé et lancé une application (E:GG) avec mon ami Sam Markiewicz.<br/>
+              Le design et le digital sont de véritables passions pour moi. Je trouve mon inspiration dans les interfaces / graphismes / produits simples, clairs et surtout fonctionnels.</p></span>
+              <p>En dehors de ça j’aime beaucoup voyager, nager, chiner, mon chat, rire et boire beaucoup de café.
            </p>
       </div>
-    </div> 
+    </div>
 
        <div id="contact" class="container">
-          <h2 class="title contact" data-2550="background-position:0px 78px;" data-2800="background-position:180px 78px;">Contact</h2>
-          <p>If you want to discuss about a project or just wanna say hello,
-feel free to contact me !</p>
+          <p class="title contact" data-2500="background-position:0% 78px;" data-2800="background-position:20% 78px;">Contact</p>
+          <p><span>Comme vous pouvez le voir, il y a des tas<br/> de façons de me contacter, alors n'hésitez pas !</span></p>
           <div class="bordure"></div>
-          <a href="javascript:mail('camille.teruin')" target="_top">camille.teruin@gmail.com</a>
+          <p><a href="javascript:mail('camille.teruin')" target="_top">camille.teruin@gmail.com</a></p>
+          <div class="bordure"></div>
           <ul id="social_navigation">
-            <li><a href="http://dribbble.com/camilleteruin"><span class="icon">d</span></a></li>
+           <li><a href="http://dribbble.com/camilleteruin"><span class="icon">d</span></a></li>
            <li><a href="http://fr.linkedin.com/pub/camille-teruin/66/574/b61"><span class="icon">l</span></a></li>
            <li><a href="http://www.viadeo.com/profile/002kquclucnngp2"><span class="icon">v</span></a></li>
            <li><a href="http://www.pinterest.com/kamiye/"><span class="icon">p</span></a></li>
            <li class="derniere"><a href="http://camilleteruin.tumblr.com"><span class="icon">t</span></a></li>
          </ul>
       </div>
-   
 
-    <div class="wrapper footer">
-      <p>© Camille Teruin - 2014 . All rights reserved</p>
-  </div>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/all.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        $('.flexslider').flexslider({
-          animation: "slide",
-        slideshowSpeed: 3000
-          });
         $('#simplhover').Simplhover({
           contentMarkup :'h2',
-          background : 'rgba(15,15,15, .9)',
+          background : 'rgba(247,247,247, .9)',
           width: 590,
           height: 336,
           timer: 500,
@@ -120,8 +114,8 @@ feel free to contact me !</p>
     </script>
       <script type="text/javascript">
     $(document).ready(function() {
-      $('#navigation a').smoothScroll({
-        offset: -120  
+      $('#navigation a, #bouton').smoothScroll({
+        offset: -120
       });
     });
   </script>
