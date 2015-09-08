@@ -136,11 +136,7 @@ line-height:150px;
 }
 #content_header{
 	text-align: center;
-<<<<<<< HEAD
 	margin-top:270px;
-=======
-	margin-top:220px;
->>>>>>> FETCH_HEAD
 }
 #header p{
 	font-family: 'PT Serif', serif;
@@ -159,11 +155,7 @@ line-height:150px;
 	width:60%;
 }
 #header img{
-<<<<<<< HEAD
-padding-top:8%;
-=======
-padding-top:6%;
->>>>>>> FETCH_HEAD
+	padding-top:8%;
 }
 
 
@@ -593,17 +585,10 @@ padding-top:20px;
   	line-height:100px;
   }
   #navigation li{
-<<<<<<< HEAD
-<<<<<<< HEAD
-	padding:0 2%;
-	font-size:0.9em;
-   }
+
    .work{
-=======
-=======
->>>>>>> FETCH_HEAD
-		padding:0 2%;
-		font-size:1em;
+   	padding:0 2%;
+	font-size:1em;
   }
   #content_header{
 		margin-top:120px;
@@ -619,11 +604,7 @@ padding-top:20px;
   /* Content */
 
   .work{
-<<<<<<< HEAD
->>>>>>> FETCH_HEAD
-=======
->>>>>>> FETCH_HEAD
-   	 padding:50px 0;
+	padding:50px 0;
   }
 	#vignettes h2{
   	font-size: 1.2em
