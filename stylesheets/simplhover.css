@@ -18,7 +18,7 @@
 
 .simplhover-element h2 {
   padding: 28% 0 0;
-  font-family: Roboto;
+  font-family: 'Lato' sans-serif;
 }
 .simplhover-element h2 a {
   color:#666666;
@@ -27,7 +27,7 @@
 }
 .simplhover-element span{
     padding-top:3%;
-    font-family: Roboto;
+    font-family: 'PT Serif', serif;
     font-weight: 400;
     font-size:.5em;
     display:block
