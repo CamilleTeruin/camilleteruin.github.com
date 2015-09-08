@@ -136,7 +136,11 @@ line-height:150px;
 }
 #content_header{
 	text-align: center;
+<<<<<<< HEAD
 	margin-top:270px;
+=======
+	margin-top:220px;
+>>>>>>> FETCH_HEAD
 }
 #header p{
 	font-family: 'PT Serif', serif;
@@ -155,7 +159,11 @@ line-height:150px;
 	width:60%;
 }
 #header img{
+<<<<<<< HEAD
 padding-top:8%;
+=======
+padding-top:6%;
+>>>>>>> FETCH_HEAD
 }
 
 
@@ -384,6 +392,7 @@ text-align: center;
 .footer p{
 color: #666666;
 padding-top:20px;
+<<<<<<< HEAD
 }
 
 
@@ -466,6 +475,90 @@ padding-top:20px;
 
 }
 
+=======
+}
+
+
+/* --- Media Queries : Tablette --- */
+
+@media only screen and (min-width: 569px) and (max-width: 1100px) {
+
+	/* Header */
+	.menu img{
+  	left:4%;
+  	max-width:35%;
+  	}
+  #header p{
+  	font-size: 2em;
+  	line-height: 40px;
+  }
+  #header h1{
+  	font-size: 2em;
+	}
+	#header img{
+		padding-top:15%;
+		max-width:12%;
+	}
+
+  /* Content */
+	#vignettes h2 a{
+		font-size:.8em;
+	}
+	.about p{
+		font-size:1.05em;
+		padding: 15px 1% 0 25%;
+		width:70%;
+	}
+	.about h2{
+		padding: 12% 6% 4% 36%;
+	}
+	.title, .title_w{
+		background: none !important;
+	}
+	#contact{
+		width:100%;
+		margin-top: 10px;
+	}
+	#contact p{
+		font-size: 1.2em;
+	}
+	#content_about{
+		width:80% !important;
+	}
+
+  /* Pages projets */
+
+	.container_w{
+		padding: 0 20px;
+	}
+	.textes_projet,
+	.images_projet {
+		width: 100%;
+	}
+	.images_projet img{
+		width: 100%;
+	}
+	.images_projet .small{
+		width: 48.6%;
+	}
+	.small.premier{
+		padding-right:2%;
+	}
+	.images_projet {
+		text-align: center;
+		margin-left: 0;
+		padding: 2% 0 4%
+	}
+	.textes_projet{
+		float:left;
+	}
+	.navigation_projet{
+		right:0;
+	}
+
+}
+
+>>>>>>> FETCH_HEAD
 /* --- Media Queries : Phone --- */
 
 @media only screen and (max-width: 568px) {
@@ -501,11 +594,14 @@ padding-top:20px;
   }
   #navigation li{
 <<<<<<< HEAD
+<<<<<<< HEAD
 	padding:0 2%;
 	font-size:0.9em;
    }
    .work{
 =======
+=======
+>>>>>>> FETCH_HEAD
 		padding:0 2%;
 		font-size:1em;
   }
@@ -523,6 +619,9 @@ padding-top:20px;
   /* Content */
 
   .work{
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
    	 padding:50px 0;
   }
