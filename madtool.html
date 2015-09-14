@@ -9,11 +9,9 @@
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Camille Teruin</title>
-    <script type="text/javascript" src="js/modernizr.js"></script>
-<script type="text/javascript" src="js/simplhover.js"></script>
     <link type="text/css" href="stylesheets/style.css" media="screen" rel="stylesheet" />
-<link type="text/css" href="stylesheets/flexslider.css" media="screen" rel="stylesheet" />
-<link type="text/css" href="stylesheets/simplhover.css" media="screen" rel="stylesheet" />
+    <link type="text/css" href="stylesheets/colors.css" media="screen" rel="stylesheet" />
+
   </head>
 
   <body class="Madtool">
@@ -21,66 +19,53 @@
     <div id="right"></div>
     <div id="bottom"></div>
 
-    <div class="wrapper menu" >
-  <div>
-    <div class="container">
-       <a class="hide-on-phone" href="index.html"><img src="img/elts/logo_b.png" with"192" height"78"/></a>
-       <ul id="navigation" class="green">
-          <li><a href="index.html">home</a></li>
-          <li><a href="index.html#work">work</a></li>
-          <li><a href="index.html#about">about</a></li>
-          <li><a href="index.html#contact">contact</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+    <div class="madtool_p headpro">
+      <div class="wrapper menu" >
 
-    <div id="conteneur" class="container_w">
-
-        <div class="textes_projet">
-          <div class="navigation_projet hide-on-phone">
-            <a href="jef.html"><img src="img/gauche.png"></a>
-            <a href="etiquettes.html"><img src="img/droite.png"></a>
+        <div class="container">
+           <a class="hide-on-phone" href="index.html"><img src="img/elts/logo.png" with"192" height"78"/></a>
+           <ul id="navigation" class="white">
+              <li><a href="index.html">home</a></li>
+              <li><a href="index.html#work">work</a></li>
+              <li><a href="index.html#about">about</a></li>
+              <li><a href="index.html#contact">contact</a></li>
+          </ul>
         </div>
-            <h1>Madtool</h1>
-            <p class="cat_projet">Illustration / Webdesign</p>
+
+        <div class='titre container'>
+          <h1>Madtool</h1>
+        </div>
+
+      </div>
+    </div>
+
+     <div id="conteneur wrapper">
+      <div class="navigation_projet hide-on-phone container">
+        <div class="nav_gauche"><a href="etiquettes.html"><p>Les étiquettes</p></a></div>
+        <div class="navigation_droite"><a href="polleen.html"><p>PolleenShop</p></a></div>
+      </div>
+
+        <div class="textes_projet container hide-on-phone container">
+          <div class="cat_projet">
+            <p>WEB DESIGN + ILLUSTRATION</p>
+            <p>ANNEE 2013</p>
+          </div>
+          <div class="texte_projet">
+            <p>Réalisation d'illustrations pour madtool, un outil de régie publicitaire sur mobile</p>
+          </div>
          </div>
-        <div class="images_projet">
+
+        <div class="images_projet container">
             <img src="img/madtool/madtool_1.jpg">
             <img src="img/madtool/madtool_2.jpg">
 
         </div>
-        <p class="legals">2013-2014 © Madtool</p>
-        <div class="nav_bas">
-            <a href="jef.html"><img src="img/gauche.png"></a>
-            <a href="etiquettes.html"><img src="img/droite.png"></a>
-        </div>
+        <div class="navigation_projet_bas hide-on-phone container">
+          <div class="nav_gauche"><a href="etiquettes.html"><p>Les étiquettes</p></a></div>
+          <div class="navigation_droite"><a href="polleen.html"><p>PolleenShop</p></a></div>
+      </div>
     </div>
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/all.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('.flexslider').flexslider({
-          animation: "slide",
-        slideshowSpeed: 3000
-          });
-        $('#simplhover').Simplhover({
-          contentMarkup :'h2',
-          background : 'rgba(254,110,84, .7)',
-          width: 528,
-          height: 336,
-          timer: 500,
-          linkToName: ''
-        });
-      });
-      skrollr.init({
-        forceHeight: false
-      });
-      function mail(str){
-          window.location.href="mailto:" + str + "@" + "camilleteruin.com";
-      };
-    </script>
 
   </body>
 </html>

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /img/modinettes/*.jpg
+Disallow: /modinettes.html

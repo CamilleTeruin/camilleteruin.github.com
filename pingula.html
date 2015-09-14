@@ -9,11 +9,10 @@
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Camille Teruin</title>
-    <script type="text/javascript" src="js/modernizr.js"></script>
-<script type="text/javascript" src="js/simplhover.js"></script>
+
     <link type="text/css" href="stylesheets/style.css" media="screen" rel="stylesheet" />
-<link type="text/css" href="stylesheets/flexslider.css" media="screen" rel="stylesheet" />
-<link type="text/css" href="stylesheets/simplhover.css" media="screen" rel="stylesheet" />
+    <link type="text/css" href="stylesheets/colors.css" media="screen" rel="stylesheet" />
+
   </head>
 
   <body class="Pingula">
@@ -21,69 +20,54 @@
     <div id="right"></div>
     <div id="bottom"></div>
 
-    <div class="wrapper menu" >
-  <div>
-    <div class="container">
-       <a class="hide-on-phone" href="index.html"><img src="img/elts/logo_b.png" with"192" height"78"/></a>
-      <ul id="navigation" class="green">
-          <li><a href="index.html">home</a></li>
-          <li><a href="index.html#work">work</a></li>
-          <li><a href="index.html#about">about</a></li>
-          <li><a href="index.html#contact">contact</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-    <div id="conteneur" class="container_w">
-
-        <div class="textes_projet">
-          <div class="navigation_projet hide-on-phone">
-            <a href="egg.html"><img src="img/gauche.png"></a>
-            <a href="allan.html"><img src="img/droite.png"></a>
+    
+    <div class="wrapper pingula_p headpro">
+      <div class="wrapper menu" >
+      
+        <div class="container">
+          <a class="hide-on-phone" href="index.html"><img src="img/elts/logo.png" with"192" height"78"/></a>
+          <ul id="navigation" class="white">
+            <li><a href="index.html">home</a></li>
+            <li><a href="index.html#work">work</a></li>
+            <li><a href="index.html#about">about</a></li>
+            <li><a href="index.html#contact">contact</a></li>
+          </ul>
         </div>
-            <h1>Pingula</h1>
-            <p class="cat_projet">Identity / Webdesign / Art Direction</p>
-         </div>
-        <div class="images_projet">
-            <img src="img/pingula/pingula_1.jpg">
-            <img class="small premier" src="img/pingula/pingula_2.jpg">
-            <img class="small" src="img/pingula/pingula_3.jpg">
+
+        <div class='titre container'>
+          <h1>Pingula</h1>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="navigation_projet hide-on-phone container">
+        <div class="nav_gauche"><a href="egg.html"><p>E:GG</p></a></div>
+        <div class="navigation_droite"><a href="jef.html"><p>JEF Chaussures</p></a></div>
+      </div>
+
+        <div class="textes_projet container hide-on-phone">
+          <div class="cat_projet">
+            <p>IDENTITE + WEB DESIGN</p>
+            <p>ANNEE 2013</p>
+          </div>
+          <div class="texte_projet">
+            <p>Pingula est une plateforme qui permet aux photographes de créer facilement leur portfolio en ligne.</p>
+
+            <p>Définition de la chate graphique, création du logo, du site vitrine et du dashboard.</p>
+
+        <div class="images_projet container">
+            <img class="small premier" src="img/pingula/pingula_1.png">
+            <img class="small" src="img/pingula/pingula_2.png">
             <img src="img/pingula/pingula_4.jpg">
             <img src="img/pingula/pingula_5.jpg">
 
         </div>
-        <p class="legals">2013-2014 © Pingula</p>
-        <div class="nav_bas">
-            <a href="egg.html"><img src="img/gauche.png"></a>
-            <a href="allan.html"><img src="img/droite.png"></a>
+         <div class="navigation_projet_bas hide-on-phone container">
+          <div class="nav_gauche"><a href="egg.html"><p>E:GG</p></a></div>
+          <div class="navigation_droite"><a href="jef.html"><p>JEF Chaussures</p></a></div>
         </div>
     </div>
-
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/all.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('.flexslider').flexslider({
-          animation: "slide",
-        slideshowSpeed: 3000
-          });
-        $('#simplhover').Simplhover({
-          contentMarkup :'h2',
-          background : 'rgba(254,110,84, .7)',
-          width: 528,
-          height: 336,
-          timer: 500,
-          linkToName: ''
-        });
-      });
-      skrollr.init({
-        forceHeight: false
-      });
-      function mail(str){
-          window.location.href="mailto:" + str + "@" + "camilleteruin.com";
-      };
-    </script>
 
   </body>
 </html>
