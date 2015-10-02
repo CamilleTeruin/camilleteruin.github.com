@@ -478,6 +478,15 @@ transition:color .3s ease-in;
   .hide-on-phone {
     display: none
   }
+   #left, #right{
+  	width:0px;
+  }
+  #bottom{
+  	height:0px;
+  }
+  .menu{
+  	border-top: 0px;
+  }
 	/* Header */
 
 	.wrapper.header{
