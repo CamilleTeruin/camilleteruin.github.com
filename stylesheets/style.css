@@ -45,6 +45,9 @@ body{
 	height: 100%;
 	background: #f7f7f7;
 }
+.home{
+	background: white;
+}
 img {
 	border: 0 none;
 }
